@@ -28,7 +28,6 @@ namespace am
 		am::Vector2D& normalize();
 		am::Vector2D get_normalize() const;
 		float dot(const am::Vector2D& another) const;
-	private:
 		float m_x, m_y;
 	};
 }
