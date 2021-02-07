@@ -24,12 +24,12 @@ bool am::Vector2D::operator==(const am::Vector2D& another)
 	return m_x == another.m_x && m_y == another.m_y;
 }
 
-am::Vector2D am::Vector2D::operator-(const am::Vector2D& another)
+am::Vector2D am::Vector2D::operator-(const am::Vector2D& another) const
 {
 	return am::Vector2D(m_x - another.m_x, m_y - another.m_y);
 }
 
-am::Vector2D am::Vector2D::operator+(const am::Vector2D& another)
+am::Vector2D am::Vector2D::operator+(const am::Vector2D& another) const 
 {
 	return am::Vector2D(m_x + another.m_x, m_y + another.m_y);
 }

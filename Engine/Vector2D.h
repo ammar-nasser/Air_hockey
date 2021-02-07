@@ -16,8 +16,8 @@ namespace am
 	public:
 		Vector2D(float x = 0.0f, float y = 0.0f);
 		bool operator==(const am::Vector2D& another);
-		am::Vector2D operator-(const am::Vector2D& another);
-		am::Vector2D operator+(const am::Vector2D& another);
+		am::Vector2D operator-(const am::Vector2D& another) const;
+		am::Vector2D operator+(const am::Vector2D& another) const;
 		am::Vector2D operator*(float scaler);
 		am::Vector2D operator/(float scaler);
 		am::Vector2D& operator*=(float scaler);
