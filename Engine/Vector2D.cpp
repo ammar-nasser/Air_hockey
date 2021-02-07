@@ -65,7 +65,7 @@ float am::Vector2D::length_sq() const
 	return (m_x * m_x) + (m_y * m_y);
 }
 
-float am::Vector2D::lenght() const
+float am::Vector2D::length() const
 {
 	return std::sqrtf(length_sq());
 }
@@ -95,10 +95,10 @@ am::Vector2D am::Vector2D::get_normalize() const
 		return *this;
 	}
 	float recip = 1.0f / length_sq();
-	return (m_x * recip, m_y * recip);
+	return am::Vector2D(m_x * recip, m_y * recip);
 }
 
 float am::Vector2D::dot(const am::Vector2D& another) const
 {
-	return (m_x * another.m_x)+ (m_y * another.m_y);
+	return (m_x * another.m_x) + (m_y * another.m_y);
 }

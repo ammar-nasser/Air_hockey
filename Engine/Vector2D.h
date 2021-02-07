@@ -23,7 +23,7 @@ namespace am
 		am::Vector2D& operator*=(float scaler);
 		am::Vector2D& operator/=(float scaler);
 		float length_sq()const;
-		float lenght() const;
+		float length() const;
 		bool is_zero() const;
 		am::Vector2D& normalize();
 		am::Vector2D get_normalize() const;
